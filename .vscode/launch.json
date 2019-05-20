@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InnerPerson",
+            "request": "launch",
+            "mainClass": "InnerPerson"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileStream",
+            "request": "launch",
+            "mainClass": "FileStream"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - fileio",
+            "request": "launch",
+            "mainClass": "fileio"
+        }
+    ]
+}
