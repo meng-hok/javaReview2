@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - JavaEight",
+            "request": "launch",
+            "mainClass": "JavaEight",
+            "projectName": "SecondReview_b1913c5c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SubException",
+            "request": "launch",
+            "mainClass": "SubException",
+            "projectName": "SecondReview_b1913c5c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - InnerThreadTester",
             "request": "launch",
             "mainClass": "InnerThreadTester",

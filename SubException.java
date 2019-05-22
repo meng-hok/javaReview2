@@ -1,13 +1,32 @@
 import java.io.*;
-
+import java.nio.file.Path;
+import java.nio.file.Paths;
 /**
  * SubException
  */
 public class SubException {
 
     public static void main(String[] args) {
+
+        //  Path file = Paths.get("/home/Desktop/SecondReview$/test.txt");
+        File file = new File ("tesEt.txt");
+        // Path file = Paths.get("test.txt");
+        // System.out.println(file.get);
+        System.out.println(file.getAbsoluteFile());
+        System.out.println(file.isAbsolute());
+        System.out.println(file.exists());
         
-        
+        // try {
+        //     // File.createTempFile("prefix", "suffix");
+        //     sy
+        // } catch (IOException e) {
+        //     // TODO Auto-generated catch block
+        //     e.printStackTrace();
+        // }finally
+        // {
+        //     System.out.println("hehehehe");
+        // }
+        // file.
 
     }
 

@@ -1,4 +1,7 @@
 import java.io.*;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Period;
 
 /**
  * JavaEight
@@ -61,6 +64,17 @@ public class JavaEight {
     void greeting (){
         System.out.println("hello world");
     }
-   
+    static void dater(){
+        Period per = Period.between(LocalDate.of(2018,5,22),LocalDate.now());
+        System.out.println(per);
+        Duration thirtyDay = Duration.ofDays(30);
+        System.out.println(thirtyDay);
+    }
+    
+    public static void main(String[] args) {
+        // JavaEight.dater();
+     
+
+    }
 }
 

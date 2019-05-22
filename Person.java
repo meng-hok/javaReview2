@@ -29,26 +29,24 @@ public class Person implements Serializable{
 /**
  * InnerPerson
  */
- class InnerPerson {
- 
-    public static void main(String[] args) {
-        // System.out.println("hahaha");
-        ArrayList<String> arr = new ArrayList();
-        for (int i = 0; i < 10; i++) {
-            arr.add("num:"+i);
+ class InnerPerson extends MengHongException{
+    
+    public static void main(String[] args){
+        try{
+            throw new MengHongException();
+        }catch(MengHongException ex){
+            ex.printStackTrace();
         }
-
-        System.out.println(arr);
-
-        // Stream ster = arr.stream();
-
-        // arr.forEach(action);
-        
-        arr.stream().filter(value -> value != "num:5").map(x ->  x+"hahahah").forEach(data -> {
-            System.out.println(data);
-        });;
-
-        System.out.println(arr);
+       
     }
     
+}
+
+class MengHongException extends Exception{
+   MengHongException(){
+       super("hahahahha");
+   }
+}
+class Hello extends MengHongException{
+  
 }
