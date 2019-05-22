@@ -3,6 +3,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 /**
  * SubException
+ * 1 . create class , raise error 3 catch (checked exception) 
+ *
  */
 public class SubException {
 
