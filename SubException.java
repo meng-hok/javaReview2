@@ -2,6 +2,8 @@ import java.io.*;
 
 /**
  * SubException
+ * 1 . create class , raise error 3 catch (checked exception) 
+ *
  */
 public class SubException {
 
