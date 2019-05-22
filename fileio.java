@@ -6,6 +6,9 @@ import java.io.*;
 import java.nio.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Base64;
 
 class fileio{
     void pathtest() {
@@ -19,7 +22,7 @@ class fileio{
     }
 
     public static void main(String[] args) throws Exception{
-        new fileio().pathtest();
+        subThread.baser();
     }
 
     void serializatester() throws Exception{
@@ -51,4 +54,51 @@ class fileio{
         
         
     }
+
+    // void dbTester() throws ClassNotFoundException {
+
+    //     Class.forName(" className ");
+        
+    //     String url = "";
+
+    //     Connection connection = DriverManager.getConnection(URL," "," ");
+
+    //     PreparedStatement prep = connection.preparedStatement("select * from table");
+
+    //     ResultSet res = prep.executeUpdate();
+
+    //     while(res.next()){
+    //         System.out.println(res.next());
+    //     }
+        
+    //     connection.close();
+    // }
+
 }
+
+class subThread implements Runnable {
+
+    public void run(){
+        System.out.println();
+    }
+    
+    public void name() {
+        throw new subException();
+    }
+
+    public static void baser(){
+       String str =  Base64.getEncoder().encodeToString("hello".getBytes());
+       System.out.println(str);
+    }
+
+    public static void dater() {
+        FileReader fileReader = new FileReader("test.txt");
+        fileReader.read
+        System.out.println();
+        
+    }
+ }
+
+ class subException extends RuntimeException { 
+    
+ }
